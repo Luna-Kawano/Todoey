@@ -18,7 +18,7 @@ class ToDoListViewController: UITableViewController {
         super.viewDidLoad()
         
         //use user default to persist data
-        if let items = UserDefaults.standard.array(forKey: "ToDoListArray") as? [String] {
+        if let items = defaults.array(forKey: "TodoListArray") as? [String] {
             itemArray = items
         }
        
